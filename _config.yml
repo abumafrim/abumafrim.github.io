@@ -15,4 +15,4 @@ gems:
   - abumafrim
 
 #Others
-markdown: abumafrim
+markdown: kramdown
