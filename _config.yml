@@ -1,18 +1,18 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
+title:        Hausa NLP
+tagline:      Natural Language Processing
 baseurl:      ""
 paginate:     1
 locale:       "en"
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       Idris Abdulmumin
+  url:        http://dcs.abu.edu.ng/staff/idris-abdulmumin 
 
 # Gems
 gems:
-  - jekyll-paginate
+  - abumafrim
 
 #Others
-markdown: kramdown
+markdown: abumafrim
