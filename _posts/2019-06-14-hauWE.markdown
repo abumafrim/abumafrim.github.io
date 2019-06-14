@@ -1,0 +1,15 @@
+---
+layout: default
+title:  "hauWE"
+date:   2019-06-14 10:23:00
+categories: main
+---
+
+Word embeddings (distributed word vector representations) have become an essential component of many natural language processing (NLP) tasks such as Machine Translation, Sentiment Analysis, Word Analogy, Named Entity Recognition and Word Similarity. Despite this, only a few works such as (Bojanowski et al., 2016) provides word embeddings for Hausa language. The model for the language also consists of only a few word vectors for the language. This work presents a word embedding models using (Mikolov, Corrado, Chen, & Dean, 2013)’s Continuous Bag of Words (CBoW) and Skip Gram (SG) models. The models, hauWE (Hausa Word Embeddings), consists of a larger vocabulary than the previous models and will be made available for research on Hausa NLP tasks.
+
+Download the models:
+	[hauWE SG][hauWE-SG],
+	[hauWE CBOW][hauWE-CBOW].
+
+[hauWE-CBOW]: https://github.com/mojombo/jekyll
+[hauWE-SG]:    http://jekyllrb.com
