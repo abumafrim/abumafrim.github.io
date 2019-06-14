@@ -5,11 +5,21 @@ date:   2019-06-14 10:23:00
 categories: main
 ---
 
+hauWE: Hausa Word Embeddings
+
 Word embeddings (distributed word vector representations) have become an essential component of many natural language processing (NLP) tasks such as Machine Translation, Sentiment Analysis, Word Analogy, Named Entity Recognition and Word Similarity. Despite this, only a few works such as (Bojanowski et al., 2016) provides word embeddings for Hausa language. The model for the language also consists of only a few word vectors for the language. This work presents a word embedding models using (Mikolov, Corrado, Chen, & Dean, 2013)’s Continuous Bag of Words (CBoW) and Skip Gram (SG) models. The models, hauWE (Hausa Word Embeddings), consists of a larger vocabulary than the previous models and will be made available for research on Hausa NLP tasks.
 
-Download the models:
+Description: The models were trained using gensim, a tool created by Řehůřek and Sojka (2010) for various NLP tasks such as topic modelling and word vectors generation. Two models were created: hauWE CBOW and hauWE SG based on the implementation by Bojanowski et al. (2016). The models were trained for 5 epochs setting the minimum word count to 1 and model size as 300. All other parameters were left as default as set in gensim’s Word2Vec model implementation
+
+Download the models: 
 	[hauWE SG][hauWE-SG],
 	[hauWE CBOW][hauWE-CBOW].
 
 [hauWE-CBOW]: https://github.com/mojombo/jekyll
 [hauWE-SG]:    http://jekyllrb.com
+
+Refrences:
+
+Bojanowski, P., Grave, E., Joulin, A., & Mikolov, T. (2016). Enriching Word Vectors with Subword Information. CoRR, abs/1607.0. Retrieved from http://arxiv.org/abs/1607.04606.
+Mikolov, T., Corrado, G., Chen, K., & Dean, J. (2013). Efficient Estimation of Word Representations in Vector Space. ArXiv:1301.3781v3, 1–12.
+Řehůřek, R., & Sojka, P. (2010). Software Framework for Topic Modelling with Large Corpora. Proceedings of the LREC 2010 Workshop on New Challenges for NLP Frameworks, 45–50. Valletta, Malta: ELRA.
