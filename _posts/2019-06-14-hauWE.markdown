@@ -16,7 +16,7 @@ Download the models:
 	[hauWE CBOW][hauWE-CBOW].
 
 [hauWE-CBOW]: https://drive.google.com/open?id=163LtZYpgP0Fj1RgREvVeFvuUA-oit2hq
-[hauWE-SG]:    http://jekyllrb.com
+[hauWE-SG]:   https://drive.google.com/open?id=1mEShe-WdFdpEFteRA3cUzLldVXzk3Smh
 
 <h4>Refrences:</h4>
 <p>Bojanowski, P., Grave, E., Joulin, A., & Mikolov, T. (2016). Enriching Word Vectors with Subword Information. CoRR, abs/1607.0. Retrieved from http://arxiv.org/abs/1607.04606.</p>
