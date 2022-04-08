@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='https://dcs.abu.edu.ng/'>Lecturer, Ahmadu Bello University, Zaria</a>.
 
