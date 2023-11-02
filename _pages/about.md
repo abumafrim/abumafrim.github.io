@@ -2,15 +2,15 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://dsfsi.github.io/'>Postdoctoral Fellow, UP DSFSI</a>, <a href='https://dcs.abu.edu.ng/'>Lecturer, Ahmadu Bello University, Zaria</a>.
+subtitle: <a href='https://dsfsi.github.io/'>Postdoctoral Fellow, UP DSFSI</a>, <br/><a href='https://dcs.abu.edu.ng/'>Lecturer, Ahmadu Bello University, Zaria</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>Department of Computer Science</p>
-    <p>Ahmadu Bello University, Zaria</p>
-    <p>Kaduna, Nigeria</p>
+    <p>UP DSFSI</p>
+    <p>University of Pretoria</p>
+    <p>Pretoria, South Africa</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
