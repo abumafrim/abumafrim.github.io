@@ -4,8 +4,6 @@
 
 # Parse cmd arguments
 
-apt-get install jupyter-notebook
-
 SRC_BRANCH="master"
 DEPLOY_BRANCH="gh-pages"
 
