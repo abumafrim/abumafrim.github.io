@@ -14,7 +14,7 @@ layout: default
     <div class="cv">
       {% for entry in site.data.cv %}
         <a class="anchor" id="{{ entry.title }}"></a>
-        <div class="card mt-2 p-2">
+        <div class="card mt-3 p-3">
           <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
           <div>
           {% if entry.type == "list" %}
@@ -57,7 +57,7 @@ layout: default
           {% continue %}
         {% endif %}
         <a class="anchor" id="{{ data[0] }}"></a>
-        <div class="card mt-2 p-2">
+        <div class="card mt-3 p-3">
           <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
           <div>
           {% case data[0] %}

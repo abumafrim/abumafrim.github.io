@@ -1,82 +1,61 @@
 {
   "basics": {
-    "name": "Idris Abdulmumin",
-    "label": "Researcher",
+    "name": "Albert Einstein",
+    "label": "Scientist",
     "image": "",
-    "email": "idris.abdulmumin@up.ac.za",
-    "phone": "(27) 67-191-5773",
-    "url": "https://abumafrim.github.io/",
-    "summary": "A postdoctoral researcher at the University of Pretoria, South Africa. I am interested in the development of resource-efficient language models for low-resource languages.",
+    "email": "albert@einstein.de",
+    "phone": "(912) 123-4567",
+    "url": "https://alshedivat.github.io/al-folio/",
+    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
     "location": {
-      "address": "1294 Boundary Lane",
-      "postalCode": "0083",
-      "city": "Pretoria",
-      "countryCode": "ZA",
-      "region": "South Africa"
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "abumafrim",
-        "url": "https://twitter.com/abumafrim"
+        "username": "AlbertEinstein",
+        "url": "https://twitter.com/AlbertEinstein"
       }
     ]
   },
   "work": [
     {
-      "name": "Data Science for Social Impact Research Group, University of Pretoria",
-      "position": "Postdoctoral Researcher",
-      "url": "https://dsfsi.github.io/",
-      "startDate": "2023-11-01",
-      "endDate": "2025-10-31",
-      "summary": "Developing resource-efficient language models for low-resource languages, especially for African languages."
-    },
-    {
-      "name": "Ahmadu Bello University, Zaria, Nigeria",
-      "position": "CS Lecturer",
-      "url": "https://www.abu.edu.ng",
-      "startDate": "2017-05-17",
-      "endDate": "",
-      "summary": "Teaching and research in the Department of Computer Science."
+      "name": "Institute for Advanced Study, Princeton University",
+      "position": "Professor of Theoretical Physics",
+      "url": "https://example.com",
+      "startDate": "1933-01-01",
+      "endDate": "1955-01-01",
+      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "highlights": [
+        "Relativity"
+      ]
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "Bayero University, Kano, Nigeria",
-      "url": "https://www.buk.edu.ng/",
-      "area": "Computer Science",
+      "institution": "University of Zurich, Zurich, Switzerland",
+      "url": "https://www.uzh.ch/",
+      "area": "Software Development",
       "studyType": "PhD",
-      "startDate": "2018-06-01",
-      "endDate": "2023-01-05",
+      "startDate": "1905-01-01",
+      "endDate": "1905-01-01",
       "score": "",
       "courses": [
-        "Low Resource Machine Translation"
+        "Theory of Relativity"
       ]
-    },
+    }
+  ],
+  "awards": [
     {
-      "institution": "Nottigham Trent University, UK",
-      "url": "https://www.ntu.ac.uk/",
-      "area": "IT Security",
-      "studyType": "MSc",
-      "startDate": "2016-01-01",
-      "endDate": "2017-01-01",
-      "score": "",
-      "courses": [
-        "Web Application Security Analysis"
-      ]
-    },
-    {
-      "institution": "Bayero University, Kano, Nigeria",
-      "url": "https://www.buk.edu.ng/",
-      "area": "Computer Science",
-      "studyType": "BSc",
-      "startDate": "2008-10-01",
-      "endDate": "2013-04-18",
-      "score": "",
-      "courses": [
-        "Plagiarism Checker, File Comparer and Project Library Software."
-      ]
+      "title": "Nobel Prize in Physics",
+      "date": "1921-11-01",
+      "awarder": "Royal Swedish Academy of Sciences",
+      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
     }
   ],
   "certificates": [],
@@ -84,7 +63,7 @@
   "skills": [],
   "languages": [
     {
-      "language": "Hausa",
+      "language": "German",
       "fluency": "Native speaker"
     },
     {
