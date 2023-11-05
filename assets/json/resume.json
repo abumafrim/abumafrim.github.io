@@ -1,0 +1,98 @@
+{
+  "basics": {
+    "name": "Idris Abdulmumin",
+    "label": "Researcher",
+    "image": "",
+    "email": "idris.abdulmumin@up.ac.za",
+    "phone": "(27) 67-191-5773",
+    "url": "https://abumafrim.github.io/",
+    "summary": "A postdoctoral researcher at the University of Pretoria, South Africa. I am interested in the development of resource-efficient language models for low-resource languages.",
+    "location": {
+      "address": "1294 Boundary Lane",
+      "postalCode": "0083",
+      "city": "Pretoria",
+      "countryCode": "ZA",
+      "region": "South Africa"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "abumafrim",
+        "url": "https://twitter.com/abumafrim"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Data Science for Social Impact Research Group, University of Pretoria",
+      "position": "Postdoctoral Researcher",
+      "url": "https://dsfsi.github.io/",
+      "startDate": "2023-11-01",
+      "endDate": "2025-10-31",
+      "summary": "Developing resource-efficient language models for low-resource languages, especially for African languages."
+    },
+    {
+      "name": "Ahmadu Bello University, Zaria, Nigeria",
+      "position": "CS Lecturer",
+      "url": "https://www.abu.edu.ng",
+      "startDate": "2017-05-17",
+      "endDate": "",
+      "summary": "Teaching and research in the Department of Computer Science."
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Bayero University, Kano, Nigeria",
+      "url": "https://www.buk.edu.ng/",
+      "area": "Computer Science",
+      "studyType": "PhD",
+      "startDate": "2018-06-01",
+      "endDate": "2023-01-05",
+      "score": "",
+      "courses": [
+        "Low Resource Machine Translation"
+      ]
+    },
+    {
+      "institution": "Nottigham Trent University, UK",
+      "url": "https://www.ntu.ac.uk/",
+      "area": "IT Security",
+      "studyType": "MSc",
+      "startDate": "2016-01-01",
+      "endDate": "2017-01-01",
+      "score": "",
+      "courses": [
+        "Web Application Security Analysis"
+      ]
+    },
+    {
+      "institution": "Bayero University, Kano, Nigeria",
+      "url": "https://www.buk.edu.ng/",
+      "area": "Computer Science",
+      "studyType": "BSc",
+      "startDate": "2008-10-01",
+      "endDate": "2013-04-18",
+      "score": "",
+      "courses": [
+        "Plagiarism Checker, File Comparer and Project Library Software."
+      ]
+    }
+  ],
+  "certificates": [],
+  "publications": [],
+  "skills": [],
+  "languages": [
+    {
+      "language": "Hausa",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": []
+}

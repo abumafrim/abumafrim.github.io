@@ -1,0 +1,77 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Idris Abdulmumin
+    - name: Date of Birth
+      value: 25th July 1991
+    - name: Languages
+      value: Hausa, English
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD
+      institution: Bayero University, Kano, Nigeria.
+      year: 2023
+      description:
+        - Domain-aware Self-learning with Synthetic Data Transfer for Improved Back-translation in Low Resource Neural Machine Translation.
+    - title: MSc.
+      institution: Nottingham Trent University, Nottingham, UK.
+      year: 2017
+      description:
+        - Web Application Security Analysis.
+    - title: BSc.
+      institution: Bayero University, Kano, Nigeria.
+      year: 2013
+      description:
+        - Plagiarism Checker, File Comparer and Project Library Software.
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Postdoctoral Fellow
+      institution: Data Science for Social Impact Research Group, University of Pretoria, South Africa.
+      year: 2023 - 2025
+      description:
+        - Developing resource-efficient language models for low-resource languages.
+    - title: Lecturer
+      institution: Ahmadu Bello University, Zaria, Nigeria.
+      year: 2017 - present
+      description:
+        - Teaching CS, Research and Community Service.
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/alshedivat/al-folio">SemRel SemEval</a>
+      year: 2013-2024
+      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 1921
+      items: 
+        - Nobel Prize in Physics 
+        - Matteucci Medal
+    - year: 2029
+      items: 
+        - Max Planck Medal
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Topic 1.
+      items: 
+        - Description 1.
+        - Description 2.
+    - title: Topic 2.
+      items:
+        - Description 1.
+        - Description 2.
+
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
