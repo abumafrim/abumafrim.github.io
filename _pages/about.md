@@ -2,19 +2,17 @@
 layout: about
 title: About
 permalink: /
-subtitle: Postdoc, <a href='https://dsfsi.github.io/'>University of Pretoria DSFSI</a>, <br/> Lecturer, <a href='https://dcs.abu.edu.ng/'>Ahmadu Bello University, Zaria</a>.
+subtitle: <a href='https://dsfsi.github.io/'>Postdoctoral Fellow, UP DSFSI</a>, <br/><a href='https://dcs.abu.edu.ng/'>Lecturer, Ahmadu Bello University, Zaria</a>.
 
 profile:
-  align: left
+  align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Computer Science,</p>
-    <p>University of Pretoria,</p>
-    <p>Pretoria, South Africa.</p>
+  address: >
+    <p>UP DSFSI</p>
+    <p>University of Pretoria</p>
+    <p>Pretoria, South Africa</p>
 
-news: false  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
+news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
