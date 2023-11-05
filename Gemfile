@@ -9,6 +9,8 @@ group :jekyll_plugins do
     gem 'jekyll-get-json'
     gem 'jekyll-github-metadata'
     gem 'jekyll-imagemagick'
+    gem 'jekyll-link-attributes'
+    gem 'jekyll-minifier'
     gem 'jekyll-paginate-v2'
     gem 'jekyll-scholar'
     gem 'jekyll-sitemap'
