@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - abumafrim
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - abumafrim/Cohere-Align
+  - abumafrim/WMT22-MasaKhane
+  - AfriHate/AfriHate
+  - afrisenti-semeval/afrisent-semeval-2023
+  - shmuhammadd/semrel-pipeline
