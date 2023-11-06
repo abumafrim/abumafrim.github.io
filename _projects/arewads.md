@@ -13,4 +13,4 @@ category: work
     </div>
 </div>
 
-This fellowship is an initiative of <a href="https://arewadatascience.github.io/">Arewa Data Science</a> to train and mentor young data scientists in Northern Nigeria.
+This fellowship is an initiative of <a href="https://arewadatascience.github.io/">Arewa Data Science</a> to train and mentor young data scientists in Northern Nigeria. 

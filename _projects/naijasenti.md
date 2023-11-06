@@ -16,4 +16,4 @@ related_publications: muhammad-EtAl:2022:LREC
 
 NaijaSenti is an open-source sentiment and emotion corpora for four major Nigerian languages. This project was supported by <a href="https://lacunafund.org/">lacuna-fund</a> initiatives.
 
-For more, read the project's description on the <a href="https://github.com/hausanlp/NaijaSenti">NaijaSenti</a> website.
+For more, read the project's description on the <a href="https://github.com/hausanlp/NaijaSenti">NaijaSenti</a> website. 

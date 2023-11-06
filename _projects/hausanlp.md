@@ -15,4 +15,4 @@ category: work
 
 HausaNLP is an organization that promotes research and resource development for Hausa and other Nigerian languages. The group is responsible for the development of data resources such as [Hausa Visual Genome](https://aclanthology.org/2022.lrec-1.694), [Hausa Visual Question Answering](https://aclanthology.org/2023.findings-acl.646), [NaijaSenti](https://aclanthology.org/2022.lrec-1.63), [AfriSenti](https://arxiv.org/abs/2302.08956), [AfriHate](https://github.com/AfriHate/AfriHate), [HerdPhobia](https://arxiv.org/abs/2211.15262), etc.
 
-Read more about the group at <a href="https://github.com/hausanlp">HausaNLP</a>.
+Read more about the group at <a href="https://github.com/hausanlp">HausaNLP</a>. 

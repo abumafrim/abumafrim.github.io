@@ -16,4 +16,4 @@ related_publications: https://doi.org/10.48550/arxiv.2302.08956, muhammad-etal-2
 
 AfriSenti is an open-source sentiment analysis dataset for fourteen African languages. This project was partly supported by <a href="https://lacunafund.org/">lacuna-fund</a> initiatives.
 
-For more, read the project's description on the <a href="https://github.com/afrisenti-semeval/afrisent-semeval-2023">AfriSenti</a> website.
+For more, read the project's description on the <a href="https://github.com/afrisenti-semeval/afrisent-semeval-2023">AfriSenti</a> website. 

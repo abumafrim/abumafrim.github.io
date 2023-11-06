@@ -15,4 +15,4 @@ category: work
 
 AfriHate is an open-source hate speech analysis dataset for fourteen African languages. This project is funded by <a href="https://lacunafund.org/">lacuna-fund</a> initiatives.
 
-For more, read the project's description on the <a href="https://github.com/AfriHate/AfriHate">AfriHate</a> website.
+For more, read the project's description on the <a href="https://github.com/AfriHate/AfriHate">AfriHate</a> website. 
