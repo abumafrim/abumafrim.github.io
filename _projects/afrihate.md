@@ -3,7 +3,7 @@ layout: page
 title: AfriHate
 description: AfriHate Dataset creation project.
 img: assets/img/afrihate-logo.png
-importance: 2
+importance: 5
 category: work
 ---
 

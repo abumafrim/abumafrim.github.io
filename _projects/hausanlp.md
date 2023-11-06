@@ -3,7 +3,7 @@ layout: page
 title: HausaNLP
 description: HausaNLP organization.
 img: assets/img/hausanlp-logo.png
-importance: 2
+importance: 1
 category: work
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: NaijaSenti
 description: NaijaSenti Dataset creation project.
 img: assets/img/naijasenti.png
-importance: 1
+importance: 2
 category: work
 related_publications: muhammad-EtAl:2022:LREC
 ---

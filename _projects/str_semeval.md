@@ -3,7 +3,7 @@ layout: page
 title: SemRel
 description: Semantic Textual Relatedness SemEval Shared Task.
 img: assets/img/SemRel.png
-importance: 3
+importance: 6
 category: work
 ---
 

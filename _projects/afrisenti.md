@@ -3,7 +3,7 @@ layout: page
 title: AfriSenti
 description: AfriSenti Dataset and SemEval Shared Task.
 img: assets/img/afrisenti.png
-importance: 2
+importance: 3
 category: work
 related_publications: https://doi.org/10.48550/arxiv.2302.08956, muhammad-etal-2023-semeval
 ---
