@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "post-️-may-the-4th-be-with-you-in-a-research-lab-not-so-far-away-while-data-science-for-social-impact",
+        
+          title: '🛰️ May the 4th Be With You! “In a research lab not so... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "🛰️ May the 4th Be With You! “In a research lab not so far away…”While Jedi Masters battled Sith Lords in the stars, our DSFSI researchers were hard at work confronting the dark side of data scarcity, language bias, and limited compute across the African continent. Today, we celebrate the Force of responsible AI through five powerful papers from the DSFSI alliance:1️⃣ Political Sentiment in the Twitter System (JeDEM Journal)The Election Strikes BackPenelope Matloga, Vukosi Marivate, and Kayode Olaleye analyzed political sentiment on X (Twitter) during South Africa’s 2021 local government elections. Using RoBERTa, VADER, and GPT-3.5, they revealed public sentiments toward the ANC and detected bot activities.📖 Read: https://lnkd.in/dnv-auTv🎧 Listen: https://lnkd.in/dQ_Hkh2M2️⃣ Translation with the Force of Prompts (Machine Learning with Applications)The Prompt AwakensPitso Khoboko, Vukosi Marivate, and Joseph Sefara fine-tuned Mistral 7B to translate English into isiZulu and isiXhosa. Through prompt engineering and QLoRA, they achieved impressive results with minimal computational resources.📖 Read: https://lnkd.in/eCU5XrCm🎧 Listen: https://lnkd.in/eq4hDRuq3️⃣ QA for Farmers on the Outer Rim (Applied AI Letters)The Agrarian Jedi CouncilFiskani Banda, Vukosi Marivate, and Joyce Nakatumba-Nabende developed a multilingual question-answering system for smallholder farmers, utilizing Pula Imvula farming articles and few-shot learning techniques.📖 Read: https://lnkd.in/d-Gv-rKM🎧 Listen: https://lnkd.in/d2BkvZ-N4️⃣ Summarizing the Jedi Archives: ZASCA-Sum (Data in Brief)The Republic’s Legal Records, Now Machine-ReadableIdris Abdulmumin and Vukosi Marivate introduced ZASCA-Sum, a dataset of over 4,000 South African Supreme Court of Appeal judgments and media summaries, facilitating legal summarization research.📖 Read: https://lnkd.in/ddT6YWnF📂 Data: https://lnkd.in/dppQ8rBf💫 A Galactic Alliance of AcknowledgementsThese victories were made possible by the unwavering support of:Absa Group Chair of Data ScienceOpenAI (research compute credits)SADiLaR, GRAIN SA/GRAAN SAFCDO and IDRC (AI4D)Legal guidance from Dr. Chijioke Okorie, PhD Okorie (Data Science Law Lab)⚔️ This is the way. As we build a future where African languages and legal systems are well represented in the digital world, we salute the researchers carrying the light of innovation.May the Data be with you. — The DSFSI Alliance",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://www.linkedin.com/embed/feed/update/urn:li:share:7324708613220921344", "_blank");
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
@@ -64,17 +75,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/photo-gallery/";
-          
-        },
-      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-        
-          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
           
         },
       },{id: "post-a-post-with-tabs",
@@ -295,17 +295,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2022/giscus-comments/";
-          
-        },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
       },{id: "post-a-post-with-redirect",
