@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Postdoctoral Fellow, <a href='https://www.cs.up.ac.za/user/iabdulmumin/'>University of Pretoria DSFSI</a>.
 
