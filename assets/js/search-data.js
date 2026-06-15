@@ -18,14 +18,14 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "A growing collection of your cool projects.",
+          description: "Selected projects in African and low-resource language technology.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-repositories",
           title: "Repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          description: "Code, datasets, and tools.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -39,20 +39,42 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          description: "Courses and training in NLP, machine learning, and software engineering.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-️-may-the-4th-be-with-you-in-a-research-lab-not-so-far-away-while-data-science-for-social-impact",
+        },{id: "post-our-2026-publications-so-far-and-where-african-nlp-is-heading",
         
-          title: '🛰️ May the 4th Be With You! “In a research lab not so... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: 'Our 2026 publications so far, and where African NLP is heading <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "🛰️ May the 4th Be With You! “In a research lab not so far away…”While Jedi Masters battled Sith Lords in the stars, our DSFSI researchers were hard at work confronting the dark side of data scarcity, language bias, and limited compute across the African continent. Today, we celebrate the Force of responsible AI through five powerful papers from the DSFSI alliance:1️⃣ Political Sentiment in the Twitter System (JeDEM Journal)The Election Strikes BackPenelope Matloga, Vukosi Marivate, and Kayode Olaleye analyzed political sentiment on X (Twitter) during South Africa’s 2021 local government elections. Using RoBERTa, VADER, and GPT-3.5, they revealed public sentiments toward the ANC and detected bot activities.📖 Read: https://lnkd.in/dnv-auTv🎧 Listen: https://lnkd.in/dQ_Hkh2M2️⃣ Translation with the Force of Prompts (Machine Learning with Applications)The Prompt AwakensPitso Khoboko, Vukosi Marivate, and Joseph Sefara fine-tuned Mistral 7B to translate English into isiZulu and isiXhosa. Through prompt engineering and QLoRA, they achieved impressive results with minimal computational resources.📖 Read: https://lnkd.in/eCU5XrCm🎧 Listen: https://lnkd.in/eq4hDRuq3️⃣ QA for Farmers on the Outer Rim (Applied AI Letters)The Agrarian Jedi CouncilFiskani Banda, Vukosi Marivate, and Joyce Nakatumba-Nabende developed a multilingual question-answering system for smallholder farmers, utilizing Pula Imvula farming articles and few-shot learning techniques.📖 Read: https://lnkd.in/d-Gv-rKM🎧 Listen: https://lnkd.in/d2BkvZ-N4️⃣ Summarizing the Jedi Archives: ZASCA-Sum (Data in Brief)The Republic’s Legal Records, Now Machine-ReadableIdris Abdulmumin and Vukosi Marivate introduced ZASCA-Sum, a dataset of over 4,000 South African Supreme Court of Appeal judgments and media summaries, facilitating legal summarization research.📖 Read: https://lnkd.in/ddT6YWnF📂 Data: https://lnkd.in/dppQ8rBf💫 A Galactic Alliance of AcknowledgementsThese victories were made possible by the unwavering support of:Absa Group Chair of Data ScienceOpenAI (research compute credits)SADiLaR, GRAIN SA/GRAAN SAFCDO and IDRC (AI4D)Legal guidance from Dr. Chijioke Okorie, PhD Okorie (Data Science Law Lab)⚔️ This is the way. As we build a future where African languages and legal systems are well represented in the digital world, we salute the researchers carrying the light of innovation.May the Data be with you. — The DSFSI Alliance",
+        description: "Publicly available work I&#39;ve been part of this year in translation, sentiment, speech, language ID, and benchmarking for African languages.",
         section: "Posts",
         handler: () => {
           
-            window.open("https://www.linkedin.com/embed/feed/update/urn:li:share:7324708613220921344", "_blank");
+            window.open("https://www.linkedin.com/embed/feed/update/urn:li:share:7466049073943425025", "_blank");
+          
+        },
+      },{id: "post-african-languages-reach-record-web-presence-in-common-crawl-data",
+        
+          title: 'African languages reach record web presence in Common Crawl data <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "African languages just hit their highest-ever representation on the web!!!The latest Common Crawl (Jan 2026) shows African languages at 0.057% of all crawled pages, an all-time record. That&#39;s 18.5% higher than the previous peak and 343,000+ more pages than the last crawl.Some standout growth in a single month:→ Igbo: +124%→ Sango: +259%→ Tswana: +279%→ Swahili: +45% (now at 294K pages)For context, English sits at 42% — roughly 728x more pages than all 29 detected African languages combined. There&#39;s still a massive gap, but the direction is right. We believe projects like AfriCC are contributing to this shift by actively increasing the volume and diversity of African language content available for web crawlers.The full data is open — Common Crawl publishes language stats for every monthly crawl: https://lnkd.in/dE-WAUeZWhat&#39;s your take — what else can we do to close this gap?#AfriCC #AfricanLanguages #NLP #CommonCrawl #DigitalInclusion #OpenData",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://www.linkedin.com/embed/feed/update/urn:li:share:7425152130686242816", "_blank");
+          
+        },
+      },{id: "post-commonlid-re-evaluating-state-of-the-art-language-identification",
+        
+          title: 'CommonLID: Re-evaluating State-of-the-Art Language Identification… <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "Introducing our workCommonLID: Re-evaluating State-of-the-Art Language Identification Performance on Web DataArXiv: https://lnkd.in/dBgW6b6PSome months ago, I invited the community to participate in a hackathon to annotate a language identification dataset, with authorship on the resulting dataset description paper as an incentive. We are deeply grateful to everyone who participated, as well as to the Common Crawl team led by Pedro Ortiz Suarez, my boss Vukosi Marivate, and our collaborators Shamsuddeen H. Muhammad, PhD, and Atnafu Lambebo Tonja.We hope this resource will inspire a wide range of NLP research and applications, and contribute meaningfully to advancing African NLP.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://www.linkedin.com/embed/feed/update/urn:li:share:7422543844220747776", "_blank");
           
         },
       },{id: "books-the-godfather",
@@ -60,62 +82,86 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-afrisenti-received-the-best-non-archival-paper-award-at-africanlp-2023",
+          title: '🏆 AfriSenti received the Best Non-archival Paper award at AfricaNLP 2023.',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-masakhanews-won-the-area-chair-award-resources-amp-amp-evaluation-at-ijcnlp-aacl-2023",
+          title: '🏆 MasakhaNEWS won the Area Chair Award (Resources &amp;amp;amp; Evaluation) at IJCNLP-AACL 2023.',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-afrihate-was-listed-in-the-ircai-global-top-100-outstanding-ai-projects-advancing-the-sdgs-unesco",
+          title: '🏆 AfriHate was listed in the IRCAI Global Top 100 Outstanding AI Projects...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "news-semeval-2024-task-1-semantic-textual-relatedness-earned-a-best-task-paper-honorable-mention",
+          title: '🏆 SemEval-2024 Task 1 (Semantic Textual Relatedness) earned a Best Task Paper Honorable Mention....',
+          description: "",
+          section: "News",},{id: "news-presented-afrihate-a-multilingual-hate-amp-amp-abusive-language-collection-for-african-languages-at-naacl-2025",
+          title: 'Presented AfriHate, a multilingual hate &amp;amp;amp; abusive-language collection for African languages, at NAACL 2025....',
+          description: "",
+          section: "News",},{id: "news-brighter-appeared-at-acl-2025-and-our-semeval-2025-task-11-on-text-based-emotion-detection-ran-across-30-languages",
+          title: 'BRIGHTER appeared at ACL 2025, and our SemEval-2025 Task 11 on text-based emotion detection ran...',
+          description: "",
+          section: "News",},{id: "news-brighter-won-best-resource-paper-at-acl-2025",
+          title: '🏆 BRIGHTER won Best Resource Paper at ACL 2025!',
+          description: "",
+          section: "News",},{id: "news-our-semeval-2025-task-11-on-text-based-emotion-detection-was-awarded-best-task",
+          title: '🏆 Our SemEval-2025 Task 11 on text-based emotion detection was awarded Best Task.',
+          description: "",
+          section: "News",},{id: "news-awarded-principal-investigator-on-afrigemma-advancing-african-language-nlp-for-research-healthcare-and-societal-benefit",
+          title: 'Awarded Principal Investigator on AfriGemma: Advancing African Language NLP for Research, Healthcare, and...',
+          description: "",
+          section: "News",},{id: "news-as-visiting-professor-taught-nlp-amp-amp-llms-at-the-african-institute-for-mathematical-sciences-aims-south-africa-nov-dec-2025",
+          title: 'As Visiting Professor, taught NLP &amp;amp;amp; LLMs at the African Institute for Mathematical...',
+          description: "",
+          section: "News",},{id: "news-co-organising-two-semeval-2026-shared-tasks-multilingual-online-polarization-detection-and-dimensional-aspect-based-sentiment-amp-amp-stance",
+          title: 'Co-organising two SemEval-2026 shared tasks — multilingual online polarization detection, and dimensional aspect-based...',
+          description: "",
+          section: "News",},{id: "news-several-papers-at-africanlp-2026-rabat-where-i-also-serve-as-a-workshop-co-organiser",
+          title: 'Several papers at AfricaNLP 2026 (Rabat), where I also serve as a workshop co-organiser....',
+          description: "",
+          section: "News",},{id: "news-new-preprint-afriscience-mt-towards-decolonizing-science-in-africa-through-text-translation",
+          title: 'New preprint: AfriScience-MT — Towards Decolonizing Science in Africa through Text Translation. 📄...',
+          description: "",
+          section: "News",},{id: "news-new-preprint-temporal-simultaneity-predicts-annotation-quality-in-sentiment-corpora",
+          title: 'New preprint: Temporal Simultaneity Predicts Annotation Quality in Sentiment Corpora. 📄',
+          description: "",
+          section: "News",},{id: "news-returning-to-aims-south-africa-as-visiting-professor-to-teach-nlp-amp-amp-llms-for-the-upcoming-nov-dec-2026-cohort",
+          title: 'Returning to AIMS South Africa as Visiting Professor to teach NLP &amp;amp;amp; LLMs...',
+          description: "",
+          section: "News",},{id: "projects-afrigemma",
+          title: 'AfriGemma',
+          description: "A multimodal, multilingual Pan-African large language model.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/afrigemma/";
+            },},{id: "projects-afrihate",
+          title: 'AfriHate',
+          description: "Hate &amp;amp; abusive-language datasets for African languages.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/afrihate/";
+            },},{id: "projects-afriscience-mt",
+          title: 'AfriScience-MT',
+          description: "Decolonising science in Africa through machine translation.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+              window.location.href = "/projects/afriscience-mt/";
+            },},{id: "projects-afrisenti-amp-amp-naijasenti",
+          title: 'AfriSenti &amp;amp;amp; NaijaSenti',
+          description: "Twitter sentiment benchmarks for African languages.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+              window.location.href = "/projects/afrisenti/";
+            },},{id: "projects-brighter-amp-amp-emotion-detection",
+          title: 'BRIGHTER &amp;amp;amp; Emotion Detection',
+          description: "Human-annotated emotion datasets for 28+ languages.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+              window.location.href = "/projects/brighter-emotion/";
+            },},{id: "projects-hausa-visual-genome-amp-amp-havqa",
+          title: 'Hausa Visual Genome &amp;amp;amp; HaVQA',
+          description: "Multimodal datasets for Hausa.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+              window.location.href = "/projects/hausa-multimodal/";
+            },},{id: "projects-open-language-data-initiative",
+          title: 'Open Language Data Initiative',
+          description: "Open machine-translation data for low-resource languages.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/oldi/";
             },},{
         id: 'social-acm',
         title: 'ACM DL',
