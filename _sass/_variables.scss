@@ -24,6 +24,12 @@ $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 
+// Teal accent (site redesign — matches the CV)
+$teal-color: #2a9d8f !default;
+$teal-color-dark: #16434a !default;
+$teal-color-bright: #34c4b1 !default;
+$light-teal-color: color.adjust($teal-color, $lightness: 25%);
+
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
 $grey-color-dark: #1c1c1d;

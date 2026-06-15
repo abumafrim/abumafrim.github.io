@@ -2,11 +2,34 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Courses and training in NLP, machine learning, and software engineering.
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+I teach and mentor across postgraduate and undergraduate programmes, with a focus on
+Natural Language Processing, large language models, and the foundations of computing.
 
-Organize your courses by years, topics, or universities, however you like!
+## African Institute for Mathematical Sciences (AIMS), South Africa
+*Visiting Professor — Nov–Dec 2025 & 2026*
+
+- **Natural Language Processing and LLMs** (MSc)
+
+## University of Pretoria
+*2025*
+
+- **COS760: Natural Language Processing** (Honours)
+
+## Arewa Data Science Academy
+*2023 – present*
+
+- **Natural Language Processing**
+
+## Ahmadu Bello University, Zaria
+*2017 – 2023*
+
+- **COSC211** — Object-Oriented Programming I
+- **COSC212** — Object-Oriented Programming II
+- **COSC406** — Advanced Database Systems
+- **COSC403** — Software Engineering
+- **COSC802** — Software Engineering Methodologies (MSc)

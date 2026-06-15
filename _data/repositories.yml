@@ -4,6 +4,12 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - abumafrim/AfriHate
+  - abumafrim/Decolonise-Science-MT
+  - abumafrim/Hausa-Visual-Genome-Dataset
+  - abumafrim/visual-genome-dataset-creation-tool
+  - abumafrim/HausaVQA
+  - abumafrim/llm-afro-emotion-analysis
   - abumafrim/WMT22-MasaKhane
   - dsfsi/flores-fix-4-africa
   - dsfsi/zasca-sum

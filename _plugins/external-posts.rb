@@ -69,8 +69,21 @@ module ExternalPosts
     def fetch_from_urls(site, src)
       src['posts'].each do |post|
         puts "...fetching #{post['url']}"
-        content = fetch_content_from_url(post['url'])
+        begin
+          content = fetch_content_from_url(post['url'])
+        rescue => e
+          # Don't let a slow/unreachable source (e.g. LinkedIn timeout) break the build.
+          Jekyll.logger.warn "ExternalPosts:", "Could not fetch #{post['url']} (#{e.class}); using provided fields."
+          content = { title: '', content: '', summary: '' }
+        end
+        # Optional manual overrides from _config.yml (title:, description:).
+        content[:title]   = post['title']       unless post['title'].to_s.strip.empty?
+        content[:summary] = post['description']  unless post['description'].to_s.strip.empty?
         content[:published] = parse_published_date(post['published_date'])
+        if content[:title].to_s.strip.empty? && content[:content].to_s.strip.empty?
+          Jekyll.logger.warn "ExternalPosts:", "Skipping #{post['url']} (no title/content; add a title: in _config.yml)"
+          next
+        end
         create_document(site, src['name'], post['url'], content)
       end
     end
@@ -87,10 +100,13 @@ module ExternalPosts
     end
 
     def fetch_content_from_url(url)
-      html = HTTParty.get(url).body
+      html = HTTParty.get(url, timeout: 20).body
       parsed_html = Nokogiri::HTML(html)
 
-      title = parsed_html.at('head title')&.text.strip || ''
+      title = parsed_html.at('head title')&.text&.strip || ''
+      # Strip platform boilerplate from scraped titles, e.g. LinkedIn's
+      # "... | Idris Abdulmumin posted on the topic | LinkedIn"
+      title = title.split(/\s+\|\s+/).first.to_s.strip unless title.empty?
       description = parsed_html.at('head meta[name="description"]')&.attr('content')
       description ||= parsed_html.at('head meta[name="og:description"]')&.attr('content')
       description ||= parsed_html.at('head meta[property="og:description"]')&.attr('content')

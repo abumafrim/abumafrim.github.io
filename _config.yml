@@ -32,7 +32,7 @@ back_to_top: true # set to false to disable the back to top button
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
+  enabled: false # disabled: the github-profile-trophy service is unreliable (broken images)
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
@@ -124,12 +124,19 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  # - name: LinkedIn
-  #   rss_url: https://www.linkedin.com/company/dsfsi/posts/?feedView=all
   - name: LinkedIn
     posts:
-      - url: https://www.linkedin.com/embed/feed/update/urn:li:share:7324708613220921344
-        published_date: 2025-05-04
+      - url: https://www.linkedin.com/embed/feed/update/urn:li:share:7466049073943425025
+        published_date: 2026-05-29
+        title: "Our 2026 publications so far, and where African NLP is heading"
+        description: "Publicly available work I've been part of this year in translation, sentiment, speech, language ID, and benchmarking for African languages."
+      - url: https://www.linkedin.com/embed/feed/update/urn:li:share:7425152130686242816
+        published_date: 2026-02-05
+      - url: https://www.linkedin.com/embed/feed/update/urn:li:share:7422543844220747776
+        published_date: 2026-01-29
+      # To add more: copy a post's embed link (Post -> ... -> Embed this post) and add:
+      #   - url: https://www.linkedin.com/embed/feed/update/urn:li:share:<POST_ID>
+      #     published_date: 2026-06-01
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -350,7 +357,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: true
   widths:
     - 480
     - 800
@@ -443,7 +450,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=Exo+2:300,400,400italic,500,600,700,700italic|Roboto+Slab:300,400,500,700|Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:
@@ -627,9 +634,11 @@ third_party_libraries:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
+# Disabled the JSON resume source so the CV page renders from _data/cv.yml (real data).
+# To use the JSON Resume format instead, restore this and edit assets/json/resume.json.
+# jekyll_get_json:
+#   - data: resume
+#     json: assets/json/resume.json # it can also be an url
 
 jsonresume:
   - basics

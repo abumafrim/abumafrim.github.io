@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Selected projects in African and low-resource language technology.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [Models and Systems, Datasets and Benchmarks, Community and Shared Tasks]
 horizontal: false
 ---
 

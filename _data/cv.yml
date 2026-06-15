@@ -2,96 +2,102 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Idris Abdulmumin, PhD
+    - name: Focus
+      value: Natural Language Processing for African and low-resource languages
+    - name: Based in
+      value: Pretoria, South Africa
     - name: Languages
-      value: English, German
+      value: Hausa (native), English, Nigerian Pidgin
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PhD, Computer Science
+      institution: Bayero University, Kano, Nigeria
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "Thesis: Domain-Aware Self-Learning and Synthetic Data Transfer for Efficient Back-Translation in Low Resource Neural Machine Translation."
+    - title: MSc, IT Security
+      institution: Nottingham Trent University, Nottingham, UK
+      year: 2017
       description:
-        - Description 1.
-        - Description 2.
+        - "Dissertation: Web Application Security Analysis."
+    - title: BSc, Computer Science
+      institution: Bayero University, Kano, Nigeria
+      year: 2013
+      description:
+        - "Project: Plagiarism Checker, File Comparer and Project Library Software."
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
     - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+      institution: African Institute for Mathematical Sciences (AIMS), South Africa
+      year: 2025, 2026
+    - title: Research Associate
+      institution: Data Science for Social Impact, University of Pretoria, South Africa
+      year: 2026
+    - title: Postdoctoral Fellow
+      institution: Data Science for Social Impact, University of Pretoria, South Africa
+      year: 2023 - 2025
+    - title: Lecturer I
+      institution: Department of Computer Science, Ahmadu Bello University, Zaria, Nigeria
+      year: 2023
+    - title: Lecturer II
+      institution: Department of Computer Science, Ahmadu Bello University, Zaria, Nigeria
+      year: 2020 - 2023
+    - title: Assistant Lecturer
+      institution: Department of Computer Science, Ahmadu Bello University, Zaria, Nigeria
+      year: 2017 - 2020
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Teaching
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Natural Language Processing and LLMs (MSc)
+      institution: African Institute for Mathematical Sciences, South Africa
+      year: 2025
+    - title: "COS760: Natural Language Processing (Honours)"
+      institution: University of Pretoria
+      year: 2025
+    - title: Natural Language Processing
+      institution: Arewa Data Science Academy
+      year: 2023 - now
+    - title: OOP I & II, Advanced Databases, Software Engineering & SE Methodologies (MSc)
+      institution: Ahmadu Bello University, Zaria
+      year: 2017 - 2023
 
-- title: Honors and Awards
+- title: Grants and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - "Principal Investigator — AfriGemma: Advancing African Language NLP for Research, Healthcare, and Societal Benefit"
+    - year: 2022
       items:
-        - Max Planck Medal
+        - "Co-Investigator — AI for Education Innovation Research Network in Africa"
+        - "Co-Investigator — Google CSR Award"
+        - "Co-Investigator — Lacuna Fund 2021 Language Datasets Award"
+        - "Co-Investigator — Oracle OCI Award"
+    - year: 2021
+      items:
+        - "Co-Investigator — Lacuna Fund 2020 Language Datasets Award"
 
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: African & Low-Resource NLP
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Machine translation and data augmentation for low-resource languages
+        - Open datasets, benchmarks, and evaluation resources
+    - title: Language & Speech Technologies
       items:
-        - Description 1.
-        - Description 2.
+        - Automatic speech recognition (ASR) and text-to-speech (TTS)
+        - Sentiment, emotion, hate, and offensive language analysis
+        - Large language models for African languages
 
-- title: Other Interests
+- title: Community & Service
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "Co-organiser of shared tasks across <u>SemEval</u>, <u>WMT</u>, <u>IWSLT</u>, and <u>AfricaNLP</u>."
+    - "Active in <u>Masakhane</u>, <u>HausaNLP</u>, <u>LITHME</u>, and the <u>Open Language Data Initiative (OLDI)</u>."

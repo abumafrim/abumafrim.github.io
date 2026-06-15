@@ -23,3 +23,375 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+/* =====================================================================
+   SITE REDESIGN — Exo 2 typography + teal identity (matches the CV)
+   ===================================================================== */
+$font-exo: "Exo 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+  Arial, sans-serif;
+
+body {
+  font-family: $font-exo;
+  letter-spacing: 0.0035em;
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar, .navbar-brand, .post-title, .post .post-title,
+.profile .name, .page-title, .category, .tag, .badge,
+.cv .card .card-title, .contact-icons, .footer {
+  font-family: $font-exo;
+}
+
+h1, h2, h3, .post-title, .page-title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.navbar-brand,
+.navbar .brand,
+.navbar-brand .site-title {
+  font-weight: 700 !important;
+  letter-spacing: -0.01em;
+}
+
+/* ---- Homepage profile photo ---- */
+.profile img {
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.14);
+  border: 3px solid var(--global-theme-color);
+}
+
+/* ---- Accent the "news" / "selected publications" headers ---- */
+.news > h2,
+.publications > h2:first-of-type {
+  display: inline-block;
+  padding-bottom: 0.15rem;
+  border-bottom: 3px solid var(--global-theme-color);
+  margin-bottom: 1rem;
+}
+
+/* ---- News / announcements ---- */
+.news table td {
+  vertical-align: top;
+}
+.news .date {
+  color: var(--global-theme-color);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Publication entries ---- */
+.publications ol.bibliography li {
+  .title {
+    font-weight: 600;
+  }
+  abbr .badge {
+    background-color: var(--global-theme-color);
+    font-family: $font-exo;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  a {
+    color: var(--global-theme-color);
+  }
+}
+.publications ol.bibliography li.selected {
+  border-left: 3px solid var(--global-theme-color);
+  padding-left: 0.85rem;
+}
+
+/* ---- Links ---- */
+a, a:hover {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+/* ---- CV page ---- */
+.cv .card {
+  border-radius: 10px;
+}
+.cv .card .card-title,
+.cv h1.title {
+  color: var(--global-theme-color);
+}
+.cv .year {
+  font-variant-numeric: tabular-nums;
+}
+
+/* =====================================================================
+   HERO HOMEPAGE
+   ===================================================================== */
+.about-redesign {
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+    margin: 0.5rem 0 1.6rem;
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.2rem;
+    }
+  }
+
+  .hero-photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 4px solid var(--global-theme-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
+  }
+
+  .hero-name {
+    font-family: $font-exo;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.35rem;
+    .phd {
+      color: var(--global-theme-color);
+      font-weight: 600;
+    }
+  }
+
+  .hero-role {
+    color: var(--global-theme-color);
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin: 0 0 0.7rem;
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+
+  .hero-pitch {
+    color: var(--global-text-color-light);
+    max-width: 36rem;
+    margin: 0 0 1rem;
+    @media (max-width: 700px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* Quick-link buttons */
+  .hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    @media (max-width: 700px) {
+      justify-content: center;
+    }
+  }
+  .hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.42rem 0.95rem;
+    border: 1.5px solid var(--global-theme-color);
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--global-theme-color);
+    background: transparent;
+    transition: all 0.18s ease;
+    text-decoration: none;
+    &:hover {
+      background: var(--global-theme-color);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+    &.primary {
+      background: var(--global-theme-color);
+      color: #fff;
+      &:hover {
+        filter: brightness(1.08);
+      }
+    }
+  }
+
+  /* Stats strip */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1.1rem 0;
+    margin-bottom: 1.5rem;
+    border-top: 1px solid var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+    @media (max-width: 700px) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 1.1rem;
+    }
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .num {
+      font-family: $font-exo;
+      font-weight: 700;
+      font-size: 1.55rem;
+      color: var(--global-theme-color);
+      line-height: 1.1;
+    }
+    .label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--global-text-color-light);
+      margin-top: 0.2rem;
+    }
+  }
+
+  /* Section headings */
+  .section-head {
+    font-weight: 700;
+    margin-top: 2.2rem;
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.2rem;
+    display: inline-block;
+    border-bottom: 3px solid var(--global-theme-color);
+  }
+
+  .focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    @media (max-width: 760px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .focus-card {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 12px;
+    padding: 1.2rem 1.1rem;
+    background: var(--global-card-bg-color);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    i {
+      font-size: 1.5rem;
+      color: var(--global-theme-color);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0 0 0.35rem;
+    }
+    p {
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+      margin: 0;
+    }
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
+      border-color: var(--global-theme-color);
+    }
+  }
+}
+
+/* =====================================================================
+   REPOSITORIES — self-contained cards (no flaky external image service)
+   ===================================================================== */
+.repositories {
+  gap: 0.8rem;
+}
+.repo-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1.05rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+
+  .repo-card-icon i {
+    font-size: 1.35rem;
+    color: var(--global-theme-color);
+  }
+  .repo-card-name {
+    font-size: 0.95rem;
+    .repo-owner {
+      color: var(--global-text-color-light);
+    }
+  }
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    border-color: var(--global-theme-color);
+    color: var(--global-text-color);
+  }
+}
+
+/* =====================================================================
+   BLOG LIST
+   ===================================================================== */
+.blog-list-item {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+.blog-list-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.15rem;
+}
+.blog-list-meta {
+  font-size: 0.8rem;
+  color: var(--global-theme-color);
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+.blog-list-desc {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  margin: 0;
+}
+
+/* =====================================================================
+   COMPACT PUBLICATIONS LIST
+   ===================================================================== */
+.publications {
+  ol.bibliography li {
+    margin-bottom: 0.55rem;
+    line-height: 1.3;
+  }
+  .title {
+    font-size: 0.95rem;
+    line-height: 1.25;
+    display: inline;
+  }
+  .author,
+  .periodical {
+    font-size: 0.83rem;
+    line-height: 1.25;
+  }
+  .author {
+    margin: 0.05rem 0;
+  }
+  .periodical {
+    margin-bottom: 0.1rem;
+  }
+  /* tighter, smaller action buttons */
+  .links a.btn {
+    font-size: 0.68rem;
+    padding: 0.04rem 0.42rem;
+    margin: 0.18rem 0.18rem 0 0;
+    line-height: 1.5;
+  }
+  /* keep the year headers tight */
+  h2.bibliography {
+    margin: 0.9rem 0 0.4rem;
+    font-size: 1.1rem;
+  }
+}

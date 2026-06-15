@@ -1,80 +1,90 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+<div class="post about-redesign">
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-photo">
+      <img
+        src="{{ '/assets/img/prof_pic.jpg' | relative_url }}"
+        alt="{{ site.first_name }} {{ site.last_name }}"
+        loading="eager"
+      />
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-name">
+        {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}<span class="phd">, PhD</span>
+      </h1>
+      <p class="hero-role">{{ page.subtitle }}</p>
+      <p class="hero-pitch">
+        I build open datasets, models, and benchmarks that bring Natural Language
+        Processing &mdash; machine translation, speech, and sentiment, emotion &amp;
+        safety analysis &mdash; to African and other low-resource languages.
+      </p>
+      <div class="hero-links">
+        <a class="hero-btn primary" href="{{ '/cv/' | relative_url }}"><i class="fa-solid fa-file-lines"></i> CV</a>
+        <a class="hero-btn" href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid | default: 'UJBFXaoAAAAJ' }}" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i> Scholar</a>
+        <a class="hero-btn" href="https://github.com/{{ site.data.socials.github_username | default: 'abumafrim' }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a class="hero-btn" href="https://orcid.org/{{ site.data.socials.orcid_id | default: '0000-0002-3795-8381' }}" target="_blank" rel="noopener"><i class="fa-brands fa-orcid"></i> ORCID</a>
+        <a class="hero-btn" href="mailto:abumafrim@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      </div>
+    </div>
+  </section>
 
   <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
+    <!-- Bio (from about.md) -->
+    <div class="bio">{{ content }}</div>
 
-    <div class="clearfix">{{ content }}</div>
+    <!-- ===================== RESEARCH FOCUS ===================== -->
+    <h2 class="section-head">Research focus</h2>
+    <div class="focus-grid">
+      <div class="focus-card">
+        <i class="fa-solid fa-language"></i>
+        <h3>Translation &amp; Speech</h3>
+        <p>Low-resource neural machine translation, back-translation, and automatic speech recognition &amp; synthesis for African languages.</p>
+      </div>
+      <div class="focus-card">
+        <i class="fa-solid fa-comment-dots"></i>
+        <h3>Sentiment, Emotion &amp; Safety</h3>
+        <p>Datasets and models for sentiment, emotion, semantic relatedness, and hate &amp; offensive language analysis.</p>
+      </div>
+      <div class="focus-card">
+        <i class="fa-solid fa-robot"></i>
+        <h3>LLMs &amp; Open Resources</h3>
+        <p>African-centric large language models (e.g.&nbsp;AfriGemma), benchmarks, and openly available language resources.</p>
+      </div>
+    </div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+      <h2 class="section-head">
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+      <h2 class="section-head">
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Latest posts -->
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      <h2 class="section-head">
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest posts</a>
+      </h2>
+      {% include latest_posts.liquid %}
     {% endif %}
 
     <!-- Social -->
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
-
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
-    {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
     {% endif %}
   </article>
 </div>
