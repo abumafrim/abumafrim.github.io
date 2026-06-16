@@ -335,6 +335,19 @@ a, a:hover {
 }
 
 /* =====================================================================
+   NAVBAR AVATAR (non-home pages) — same framed style as the hero photo
+   ===================================================================== */
+.navbar-avatar {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  border-radius: 7px;
+  border: 2px solid var(--global-theme-color);
+  margin-right: 0.55rem;
+  flex: 0 0 auto;
+}
+
+/* =====================================================================
    BLOG LIST
    ===================================================================== */
 .blog-list-item {
