@@ -77,12 +77,7 @@ ninja.data = [{
             window.open("https://www.linkedin.com/embed/feed/update/urn:li:share:7422543844220747776", "_blank");
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-afrisenti-received-the-best-non-archival-paper-award-at-africanlp-2023",
+      },{id: "news-afrisenti-received-the-best-non-archival-paper-award-at-africanlp-2023",
           title: '🏆 AfriSenti received the Best Non-archival Paper award at AfricaNLP 2023.',
           description: "",
           section: "News",},{id: "news-masakhanews-won-the-area-chair-award-resources-amp-amp-evaluation-at-ijcnlp-aacl-2023",
