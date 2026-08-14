@@ -11,7 +11,7 @@ I teach and mentor across postgraduate and undergraduate programmes, with a focu
 Natural Language Processing, large language models, and the foundations of computing.
 
 ## African Institute for Mathematical Sciences (AIMS), South Africa
-*Visiting Professor — Nov–Dec 2025 & 2026*
+*Visiting Professor, Nov–Dec 2025 & 2026*
 
 - **Natural Language Processing and LLMs** (MSc)
 
@@ -28,8 +28,8 @@ Natural Language Processing, large language models, and the foundations of compu
 ## Ahmadu Bello University, Zaria
 *2017 – 2023*
 
-- **COSC211** — Object-Oriented Programming I
-- **COSC212** — Object-Oriented Programming II
-- **COSC406** — Advanced Database Systems
-- **COSC403** — Software Engineering
-- **COSC802** — Software Engineering Methodologies (MSc)
+- **COSC211**: Object-Oriented Programming I
+- **COSC212**: Object-Oriented Programming II
+- **COSC406**: Advanced Database Systems
+- **COSC403**: Software Engineering
+- **COSC802**: Software Engineering Methodologies (MSc)

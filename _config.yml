@@ -7,9 +7,9 @@ first_name: Idris
 middle_name:
 last_name: Abdulmumin
 contact_note: >
-  Reach out to me via email if you'd like to connect or collaborate
+  Email me if you'd like to collaborate
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  I build open datasets, models, and benchmarks that bring Natural Language Processing — machine translation, speech, and sentiment, emotion & safety analysis — to African and other low-resource languages.
+  I build open datasets, models, and benchmarks that bring Natural Language Processing (machine translation, speech, and sentiment, emotion & safety analysis) to African and other low-resource languages.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.

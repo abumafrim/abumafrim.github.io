@@ -72,16 +72,16 @@
   contents:
     - year: 2025
       items:
-        - "Principal Investigator — AfriGemma: Advancing African Language NLP for Research, Healthcare, and Societal Benefit"
+        - "Principal Investigator, AfriGemma: Advancing African Language NLP for Research, Healthcare, and Societal Benefit"
     - year: 2022
       items:
-        - "Co-Investigator — AI for Education Innovation Research Network in Africa"
-        - "Co-Investigator — Google CSR Award"
-        - "Co-Investigator — Lacuna Fund 2021 Language Datasets Award"
-        - "Co-Investigator — Oracle OCI Award"
+        - "Co-Investigator, AI for Education Innovation Research Network in Africa"
+        - "Co-Investigator, Google CSR Award"
+        - "Co-Investigator, Lacuna Fund 2021 Language Datasets Award"
+        - "Co-Investigator, Oracle OCI Award"
     - year: 2021
       items:
-        - "Co-Investigator — Lacuna Fund 2020 Language Datasets Award"
+        - "Co-Investigator, Lacuna Fund 2020 Language Datasets Award"
 
 - title: Research Interests
   type: nested_list

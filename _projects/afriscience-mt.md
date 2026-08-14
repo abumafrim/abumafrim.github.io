@@ -7,4 +7,4 @@ importance: 2
 category: Models and Systems
 ---
 
-**AfriScience-MT** explores translating scientific content into African languages to broaden access to research and education. [Preprint (arXiv 2026)](https://arxiv.org/abs/2605.29741).
+**AfriScience-MT** works on translating scientific content into African languages so that research and education materials are available in them. [Preprint (arXiv 2026)](https://arxiv.org/abs/2605.29741).

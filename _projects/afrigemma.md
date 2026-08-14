@@ -7,4 +7,4 @@ importance: 1
 category: Models and Systems
 ---
 
-As Principal Investigator, I lead **AfriGemma**, a project advancing African-language NLP for research, healthcare, and societal benefit through openly available, multimodal and multilingual large language models tailored to African languages and contexts.
+As Principal Investigator, I lead **AfriGemma**, which builds openly available multimodal, multilingual large language models for African languages, for use in research and healthcare.
