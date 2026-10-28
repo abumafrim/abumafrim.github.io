@@ -16,11 +16,7 @@ layout: default
         {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}<span class="phd">, PhD</span>
       </h1>
       <p class="hero-role">{{ page.subtitle }}</p>
-      <p class="hero-pitch">
-        I build open datasets, models, and benchmarks that bring Natural Language
-        Processing &mdash; machine translation, speech, and sentiment, emotion &amp;
-        safety analysis &mdash; to African and other low-resource languages.
-      </p>
+      <p class="hero-pitch">{{ site.description }}</p>
       <div class="hero-links">
         <a class="hero-btn primary" href="{{ '/cv/' | relative_url }}"><i class="fa-solid fa-file-lines"></i> CV</a>
         <a class="hero-btn" href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid | default: 'UJBFXaoAAAAJ' }}" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i> Scholar</a>

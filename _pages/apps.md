@@ -5,160 +5,168 @@ permalink: /apps/
 description: Software I build, free to download.
 nav: true
 nav_order: 7
-toc:
-  sidebar: left
 ---
 
 <!-- pages/apps.md -->
 
 <style>
   /* al-folio styles a.btn only inside .links, so anything else falls back to
-     raw Bootstrap and fights the theme — worst in dark mode. Everything here
-     is built from the theme's own variables so it follows light and dark
-     without a second set of rules. */
-  .app__tagline + * { margin-top: 0; }
-  h2 { margin-top: 3rem; }
-  h2:first-of-type { margin-top: 0; }
-  .app__tagline {
-    font-size: 1.15rem;
-    color: var(--global-text-color-light);
-    margin-bottom: 1.5rem;
+     raw Bootstrap and fights the theme, worst in dark mode. Everything here is
+     built from the theme's own variables so light and dark both work without a
+     second set of rules. */
+
+  .apps { display: grid; grid-template-columns: 11rem 1fr; gap: 3rem; }
+  @media (max-width: 768px) {
+    .apps { grid-template-columns: 1fr; gap: 1.5rem; }
+    .apps__nav { position: static !important; }
   }
 
-  /* The one thing on this page a person came to do. It is the only element
-     given an accent, a background, or any weight at all. */
+  /* The list of applications. Built here rather than from the headings:
+     bootstrap-toc only promotes a heading level that appears more than once,
+     so a single application would never be listed. */
+  .apps__nav { position: sticky; top: 6rem; align-self: start; }
+  .apps__nav ol { list-style: none; margin: 0; padding: 0; }
+  .apps__nav a {
+    display: block;
+    padding: 0.3rem 0 0.3rem 0.8rem;
+    border-left: 2px solid var(--global-divider-color);
+    color: var(--global-text-color-light);
+    font-size: 0.95rem;
+  }
+  .apps__nav a:hover,
+  .apps__nav a.is-here {
+    color: var(--global-theme-color);
+    border-left-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+
+  .app + .app { margin-top: 5rem; }
+  .app__name { font-size: 2rem; margin: 0 0 0.3rem; }
+  .app__tagline {
+    font-size: 1.1rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 1.4rem;
+  }
+
+  /* The one thing a person came here to do, and the only element on the page
+     given an accent or a background. */
   .app__get {
     border-left: 3px solid var(--global-theme-color);
     background: var(--global-card-bg-color);
-    padding: 1.25rem 1.5rem;
-    margin-bottom: 1.5rem;
+    padding: 1.4rem 1.6rem;
+    margin: 2rem 0 1rem;
   }
   .app__download {
     display: inline-block;
-    padding: 0.5rem 1.4rem;
+    padding: 0.55rem 1.5rem;
     background: var(--global-theme-color);
     color: var(--global-bg-color);
     border-radius: 3px;
     font-weight: 600;
     text-decoration: none;
   }
-  .app__download:hover {
-    color: var(--global-bg-color);
-    text-decoration: none;
-    opacity: 0.85;
-  }
-  .app__download:focus-visible {
-    outline: 2px solid var(--global-text-color);
-    outline-offset: 2px;
-  }
-  .app__size {
-    margin-left: 0.85rem;
-    color: var(--global-text-color-light);
-    font-size: 0.9rem;
-  }
-  .app__facts {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0;
-    font-size: 0.9rem;
-    color: var(--global-text-color-light);
-  }
-  .app__facts li { margin-bottom: 0.25rem; }
+  .app__download:hover { color: var(--global-bg-color); text-decoration: none; opacity: 0.85; }
+  .app__download:focus-visible { outline: 2px solid var(--global-text-color); outline-offset: 3px; }
+  .app__size { margin-left: 0.9rem; color: var(--global-text-color-light); font-size: 0.9rem; }
+  .app__facts { list-style: none; padding: 0; margin: 1.1rem 0 0; font-size: 0.9rem; color: var(--global-text-color-light); }
+  .app__facts li { margin-bottom: 0.2rem; }
 
-  /* Platforms that do not exist yet. Stated once, quietly — three empty cards
-     would spend most of the page advertising absence. */
-  .app__coming {
-    font-size: 0.9rem;
-    color: var(--global-text-color-light);
-    border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-  }
-  .app__coming b { color: var(--global-text-color); font-weight: 600; }
-  .app__coming p { margin-bottom: 0.4rem; }
+  .app__elsewhere { font-size: 0.9rem; color: var(--global-text-color-light); margin-bottom: 3rem; }
+  .app__elsewhere b { color: var(--global-text-color); font-weight: 600; }
+  .app__elsewhere p { margin-bottom: 0.3rem; }
 
-  .app__does { margin: 0; }
-  .app__does dt {
+  /* Section headings sit well below the app name in the hierarchy, so they are
+     set as quiet rules rather than as more large bold type competing with it. */
+  .app__section {
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--global-text-color);
-    margin-top: 0.9rem;
-  }
-  .app__does dd {
-    margin: 0.15rem 0 0;
-    color: var(--global-text-color-light);
-  }
-
-  .app__release {
-    display: grid;
-    grid-template-columns: 7rem 1fr;
-    gap: 0 1rem;
-    padding: 0.9rem 0;
     border-top: 1px solid var(--global-divider-color);
+    padding-top: 1.5rem;
+    margin: 3rem 0 1.5rem;
   }
-  .app__release:last-child { border-bottom: 1px solid var(--global-divider-color); }
-  .app__version { font-weight: 600; color: var(--global-text-color); }
-  .app__date { color: var(--global-text-color-light); font-size: 0.85rem; }
-  .app__notes { color: var(--global-text-color-light); margin: 0; }
 
-  @media (max-width: 576px) {
-    .app__release { grid-template-columns: 1fr; gap: 0.3rem; }
-  }
+  .app__does { column-count: 2; column-gap: 2.5rem; }
+  @media (max-width: 768px) { .app__does { column-count: 1; } }
+  .app__does > div { break-inside: avoid; margin-bottom: 1.6rem; }
+  .app__does h4 { font-size: 1rem; font-weight: 600; margin: 0 0 0.3rem; }
+  .app__does p { color: var(--global-text-color-light); margin: 0; font-size: 0.95rem; }
+
+  .app__release { display: grid; grid-template-columns: 8rem 1fr; gap: 0 1.5rem; }
+  .app__release + .app__release { margin-top: 1.5rem; }
+  @media (max-width: 576px) { .app__release { grid-template-columns: 1fr; gap: 0.3rem; } }
+  .app__version { font-weight: 600; }
+  .app__date { color: var(--global-text-color-light); font-size: 0.85rem; }
+  .app__notes { color: var(--global-text-color-light); margin: 0; font-size: 0.95rem; }
 </style>
 
+<div class="apps">
+
+<nav class="apps__nav" aria-label="Applications">
+  <ol>
+    {% for app in site.data.apps.apps %}
+    <li><a href="#{{ app.id }}" class="{% if forloop.first %}is-here{% endif %}">{{ app.name }}</a></li>
+    {% endfor %}
+  </ol>
+</nav>
+
+<div>
 {% for app in site.data.apps.apps %}
 {% assign latest = app.history | first %}
 {% assign filename = app.file | replace: '{version}', latest.version %}
 
-## {{ app.name }}
+<section class="app" id="{{ app.id }}">
+  <h2 class="app__name">{{ app.name }}</h2>
+  <p class="app__tagline">{{ app.tagline }}</p>
 
-<p class="app__tagline">{{ app.tagline }}</p>
+  <p>{{ app.about }}</p>
+  <p>{{ app.privacy }}</p>
 
-{{ app.about }}
-
-{{ app.privacy }}
-
-<div class="app__get">
-  <a class="app__download"
-     href="{{ app.releases }}/download/v{{ latest.version }}/{{ filename }}">
-    Download for {{ app.download_for }}
-  </a>
-  <span class="app__size">{{ app.size }}, version {{ latest.version }}</span>
-  <ul class="app__facts">
-    {% for fact in app.facts %}<li>{{ fact }}</li>{% endfor %}
-    <li>{{ app.requires }}.</li>
-  </ul>
-</div>
-
-<div class="app__coming">
-  {% for item in app.coming %}
-  <p><b>{{ item.name }}</b> — {{ item.when }}</p>
-  {% endfor %}
-</div>
-
-### What it does
-
-<dl class="app__does">
-  {% for feature in app.features %}
-  <dt>{{ feature.name }}</dt>
-  <dd>{{ feature.text }}</dd>
-  {% endfor %}
-</dl>
-
-### Releases
-
-{% for release in app.history %}
-<div class="app__release">
-  <div>
-    <div class="app__version">{{ release.version }}</div>
-    <div class="app__date">{{ release.date }}</div>
+  <div class="app__get">
+    <a class="app__download" href="{{ app.releases }}/download/v{{ latest.version }}/{{ filename }}">
+      Download for {{ app.download_for }}
+    </a>
+    <span class="app__size">{{ app.size }}, version {{ latest.version }}</span>
+    <ul class="app__facts">
+      {% for fact in app.facts %}<li>{{ fact }}</li>{% endfor %}
+      <li>{{ app.requires }}.</li>
+    </ul>
   </div>
-  <p class="app__notes">{{ release.notes }}</p>
+
+  <div class="app__elsewhere">
+    {% for item in app.coming %}
+    <p><b>{{ item.name }}:</b> {{ item.when }}</p>
+    {% endfor %}
+  </div>
+
+  <h3 class="app__section">What it does</h3>
+  <div class="app__does">
+    {% for feature in app.features %}
+    <div>
+      <h4>{{ feature.name }}</h4>
+      <p>{{ feature.text }}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <h3 class="app__section">Releases</h3>
+  {% for release in app.history %}
+  <div class="app__release">
+    <div>
+      <div class="app__version">{{ release.version }}</div>
+      <div class="app__date">{{ release.date }}</div>
+    </div>
+    <p class="app__notes">{{ release.notes }}</p>
+  </div>
+  {% endfor %}
+
+  <h3 class="app__section">Licence</h3>
+  <p>
+    Free to use, for personal and commercial work alike. The licence ships with
+    the application and can be read from its Help menu, along with the notices
+    for the open-source components it is built from.
+  </p>
+</section>
+{% endfor %}
 </div>
-{% endfor %}
-
-### Licence
-
-Free to use, for personal and commercial work alike. The licence ships with
-the application and can be read from its Help menu, along with the notices for
-the open-source components it is built from.
-
-{% endfor %}
+</div>

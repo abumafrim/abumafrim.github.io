@@ -1,3 +1,10 @@
+# Repositories listed on /repositories/.
+#
+# `descriptions` is optional and keyed by the full name. GitHub holds a
+# description for only one of these, so the page would otherwise be a list of
+# names. Filling one in here puts it on the page; filling it in on GitHub is
+# better, because it helps anyone who arrives there instead.
+
 github_users:
   - abumafrim
 
@@ -13,3 +20,14 @@ github_repos:
   - abumafrim/WMT22-MasaKhane
   - dsfsi/flores-fix-4-africa
   - dsfsi/zasca-sum
+
+descriptions:
+  abumafrim/AfriHate: Hate and abusive-language datasets for African languages.
+  abumafrim/Decolonise-Science-MT: Machine translation of scientific text into African languages.
+  abumafrim/Hausa-Visual-Genome-Dataset: A multimodal Hausa dataset built from Visual Genome.
+  abumafrim/visual-genome-dataset-creation-tool: Tooling for building multimodal datasets.
+  abumafrim/HausaVQA: Visual question answering in Hausa.
+  abumafrim/llm-afro-emotion-analysis: Emotion analysis with large language models for African languages.
+  abumafrim/WMT22-MasaKhane: MasaKhane's WMT22 shared-task work.
+  dsfsi/flores-fix-4-africa: Corrections to the FLORES benchmark for African languages.
+  dsfsi/zasca-sum: Summarisation of South African court judgments.
