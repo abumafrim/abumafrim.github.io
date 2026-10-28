@@ -2,153 +2,156 @@
 layout: page
 title: Apps
 permalink: /apps/
-description: Software I build and maintain, free to download.
+description: Software I build, free to download.
 nav: true
 nav_order: 7
+toc:
+  sidebar: left
 ---
 
 <!-- pages/apps.md -->
 
 <style>
-  /* al-folio styles `a.btn` only inside `.links`, so buttons elsewhere fall
-     back to raw Bootstrap and clash with the theme — including in dark mode.
-     These use the theme's own variables, so they follow it. */
-  .app-btn {
-    display: inline-block;
-    padding: 0.35rem 1rem;
-    border-radius: 0.25rem;
-    border: 1px solid var(--global-theme-color);
-    color: var(--global-theme-color);
-    background: transparent;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
-  .app-btn:hover {
-    color: var(--global-bg-color);
-    background: var(--global-theme-color);
-    text-decoration: none;
-  }
-  .app-btn--filled {
-    color: var(--global-bg-color);
-    background: var(--global-theme-color);
-  }
-  .app-btn--filled:hover {
-    opacity: 0.85;
-    color: var(--global-bg-color);
-  }
-  .app-btn--off {
-    border-color: var(--global-divider-color);
-    color: var(--global-divider-color);
-    cursor: default;
-  }
-  .app-btn--off:hover {
-    background: transparent;
-    color: var(--global-divider-color);
-  }
-  .app-release {
-    border-left: 2px solid var(--global-divider-color);
-    padding-left: 1rem;
+  /* al-folio styles a.btn only inside .links, so anything else falls back to
+     raw Bootstrap and fights the theme — worst in dark mode. Everything here
+     is built from the theme's own variables so it follows light and dark
+     without a second set of rules. */
+  .app__tagline + * { margin-top: 0; }
+  h2 { margin-top: 3rem; }
+  h2:first-of-type { margin-top: 0; }
+  .app__tagline {
+    font-size: 1.15rem;
+    color: var(--global-text-color-light);
     margin-bottom: 1.5rem;
   }
-  .app-release h4 {
-    margin-bottom: 0.2rem;
+
+  /* The one thing on this page a person came to do. It is the only element
+     given an accent, a background, or any weight at all. */
+  .app__get {
+    border-left: 3px solid var(--global-theme-color);
+    background: var(--global-card-bg-color);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
   }
-  .app-release .date {
+  .app__download {
+    display: inline-block;
+    padding: 0.5rem 1.4rem;
+    background: var(--global-theme-color);
+    color: var(--global-bg-color);
+    border-radius: 3px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .app__download:hover {
+    color: var(--global-bg-color);
+    text-decoration: none;
+    opacity: 0.85;
+  }
+  .app__download:focus-visible {
+    outline: 2px solid var(--global-text-color);
+    outline-offset: 2px;
+  }
+  .app__size {
+    margin-left: 0.85rem;
     color: var(--global-text-color-light);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+  }
+  .app__facts {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+  }
+  .app__facts li { margin-bottom: 0.25rem; }
+
+  /* Platforms that do not exist yet. Stated once, quietly — three empty cards
+     would spend most of the page advertising absence. */
+  .app__coming {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 1rem;
+  }
+  .app__coming b { color: var(--global-text-color); font-weight: 600; }
+  .app__coming p { margin-bottom: 0.4rem; }
+
+  .app__does { margin: 0; }
+  .app__does dt {
+    font-weight: 600;
+    color: var(--global-text-color);
+    margin-top: 0.9rem;
+  }
+  .app__does dd {
+    margin: 0.15rem 0 0;
+    color: var(--global-text-color-light);
+  }
+
+  .app__release {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    gap: 0 1rem;
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--global-divider-color);
+  }
+  .app__release:last-child { border-bottom: 1px solid var(--global-divider-color); }
+  .app__version { font-weight: 600; color: var(--global-text-color); }
+  .app__date { color: var(--global-text-color-light); font-size: 0.85rem; }
+  .app__notes { color: var(--global-text-color-light); margin: 0; }
+
+  @media (max-width: 576px) {
+    .app__release { grid-template-columns: 1fr; gap: 0.3rem; }
   }
 </style>
 
-## MafrimDocs
+{% for app in site.data.apps.apps %}
+{% assign latest = app.history | first %}
+{% assign filename = app.file | replace: '{version}', latest.version %}
 
-A PDF viewer, editor and annotator that works without a network.
+## {{ app.name }}
 
-Read, annotate, fill in forms, run text recognition on scans, reorganise
-pages, encrypt, and sign with a certificate — all on your own machine. It has
-no account, no telemetry and no analytics, and your documents are never sent
-anywhere.
+<p class="app__tagline">{{ app.tagline }}</p>
 
-It reaches the network only when you ask it to, and only for three things:
-downloading a language for text recognition, requesting a trusted timestamp
-when you sign a document, and checking whether a newer version exists. None of
-those sends a document.
+{{ app.about }}
 
-<div class="row row-cols-1 row-cols-md-2 mt-4">
-  <div class="col mb-4">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">macOS</h5>
-        <p class="card-text">
-          Apple Silicon and Intel in one download. macOS 10.15 or later.
-          Signed and notarized, so it opens without a warning.
-        </p>
-        <a class="app-btn app-btn--filled"
-           href="https://github.com/abumafrim/mafrimdocs-releases/releases/latest"
-           rel="noopener">Download</a>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">Windows and Linux</h5>
-        <p class="card-text">
-          Not released yet. The application is built on a toolkit that targets
-          both, so these are a matter of packaging rather than rewriting.
-        </p>
-        <span class="app-btn app-btn--off">Not yet</span>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">iPhone and iPad</h5>
-        <p class="card-text">
-          In development, from the same codebase as the desktop application.
-        </p>
-        <span class="app-btn app-btn--off">In development</span>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">Android</h5>
-        <p class="card-text">
-          In development, from the same codebase as the desktop application.
-        </p>
-        <span class="app-btn app-btn--off">In development</span>
-      </div>
-    </div>
-  </div>
+{{ app.privacy }}
+
+<div class="app__get">
+  <a class="app__download"
+     href="{{ app.releases }}/download/v{{ latest.version }}/{{ filename }}">
+    Download for {{ app.download_for }}
+  </a>
+  <span class="app__size">{{ app.size }}, version {{ latest.version }}</span>
+  <ul class="app__facts">
+    {% for fact in app.facts %}<li>{{ fact }}</li>{% endfor %}
+    <li>{{ app.requires }}.</li>
+  </ul>
+</div>
+
+<div class="app__coming">
+  {% for item in app.coming %}
+  <p><b>{{ item.name }}</b> — {{ item.when }}</p>
+  {% endfor %}
 </div>
 
 ### What it does
 
-- **Read and annotate** — highlight, comment, draw, and reply to comments.
-  Annotations are written as real PDF annotations, so Adobe and Preview show
-  them properly.
-- **Forms** — fill them in, and choose whether to finish a form or pass it on
-  still fillable.
-- **Text recognition** — read the text in a scan, in any of 38 languages.
-  Languages download once, then work offline.
-- **Pages** — reorder, rotate, delete, merge, split, and insert pages from
-  other files.
-- **Signing** — sign with a certificate, optionally with a trusted timestamp so
-  the date does not rest on your own computer's clock. Signing adds to a
-  document rather than replacing it, so an earlier signature stays valid.
-- **Encryption** — AES-256, with the permissions actually applied.
+<dl class="app__does">
+  {% for feature in app.features %}
+  <dt>{{ feature.name }}</dt>
+  <dd>{{ feature.text }}</dd>
+  {% endfor %}
+</dl>
 
 ### Releases
 
-{% assign app = site.data.mafrimdocs %}
-{% for release in app.releases %}
-
-<div class="app-release">
-  <h4>{{ release.version }}</h4>
-  <p class="date">{{ release.date }}</p>
-  <p>{{ release.notes }}</p>
+{% for release in app.history %}
+<div class="app__release">
+  <div>
+    <div class="app__version">{{ release.version }}</div>
+    <div class="app__date">{{ release.date }}</div>
+  </div>
+  <p class="app__notes">{{ release.notes }}</p>
 </div>
 {% endfor %}
 
@@ -157,3 +160,5 @@ those sends a document.
 Free to use, for personal and commercial work alike. The licence ships with
 the application and can be read from its Help menu, along with the notices for
 the open-source components it is built from.
+
+{% endfor %}

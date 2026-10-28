@@ -2,8 +2,8 @@
 permalink: /mafrimdocs/latest.json
 sitemap: false
 ---
-{%- assign app = site.data.mafrimdocs -%}
-{%- assign latest = app.releases | first -%}
+{%- assign app = site.data.apps.apps | where: 'feed', true | first -%}
+{%- assign latest = app.history | first -%}
 {
   "version": {{ latest.version | jsonify }},
   "notes": {{ latest.notes | strip | jsonify }},

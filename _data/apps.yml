@@ -1,0 +1,87 @@
+# Everything on /apps/, and the update feed each application reads.
+#
+# One file. Adding an application is an entry here: the page gains a section,
+# the sidebar gains a link, and — for anything with `feed: true` — the JSON
+# that application checks for updates is generated from the same release list.
+# There is nowhere for the page and the feed to disagree, because there is only
+# one of them.
+#
+# Newest release first. The application compares against whichever is at the
+# top, so the order is not cosmetic.
+#
+# platform state: available | soon | planned
+
+apps:
+  - id: mafrimdocs
+    name: MafrimDocs
+    feed: true
+    tagline: A PDF viewer, editor and annotator that works without a network.
+    page: https://abumafrim.com/apps/
+    # The download link is built from this plus the version below, so it points
+    # straight at the file and stays correct when the version changes. Nobody
+    # should have to pass through a release page to get an application.
+    releases: https://github.com/abumafrim/mafrimdocs-releases/releases
+
+    about: >-
+      Read, annotate, fill in forms, run text recognition on scans, reorganise
+      pages, encrypt, and sign with a certificate — all on your own machine. It
+      has no account, no telemetry and no analytics, and your documents are
+      never sent anywhere.
+    privacy: >-
+      It reaches the network only when you ask it to, and only for three
+      things: downloading a language for text recognition, requesting a trusted
+      timestamp when you sign a document, and checking whether a newer version
+      exists. None of those sends a document.
+
+    # The one you can actually get. `file` is appended to the release tag, so
+    # the link follows the version without being edited.
+    download_for: macOS
+    file: MafrimDocs_{version}_universal.dmg
+    size: 73 MB
+    requires: macOS 10.15 or later
+    facts:
+      - Universal build. Apple Silicon and Intel in one download.
+      - Signed and notarized by Apple, so it opens without a warning.
+
+    # Everything else, said once and quietly rather than as three empty cards.
+    coming:
+      - name: Windows and Linux
+        when: Packaging work, not a rewrite — the toolkit already targets both.
+      - name: iPhone, iPad and Android
+        when: In development, from the same codebase as the desktop app.
+
+    features:
+      - name: Read and annotate
+        text: >-
+          Highlight, comment, draw, and reply to comments. Annotations are
+          written as real PDF annotations, so Adobe and Preview show them
+          properly.
+      - name: Forms
+        text: >-
+          Fill them in, and choose whether to finish a form or pass it on still
+          fillable.
+      - name: Text recognition
+        text: >-
+          Read the text in a scan, in any of 38 languages. Languages download
+          once, then work offline.
+      - name: Pages
+        text: >-
+          Reorder, rotate, delete, merge, split, and insert pages from other
+          files.
+      - name: Signing
+        text: >-
+          Sign with a certificate, optionally with a trusted timestamp so the
+          date does not rest on your own computer's clock. Signing adds to a
+          document rather than replacing it, so an earlier signature stays
+          valid.
+      - name: Encryption
+        text: AES-256, with the permissions actually applied.
+
+    history:
+      - version: 0.1.0
+        date: October 2026
+        notes: >-
+          First release. Viewing, annotation, comments with threaded replies,
+          form filling, text recognition in 38 languages, page organisation,
+          AES-256 encryption, and certificate signing with optional trusted
+          timestamps.
