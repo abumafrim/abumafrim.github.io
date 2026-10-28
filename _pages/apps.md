@@ -142,15 +142,15 @@ those sends a document.
 
 ### Releases
 
+{% assign app = site.data.mafrimdocs %}
+{% for release in app.releases %}
+
 <div class="app-release">
-  <h4>0.1.0</h4>
-  <p class="date">October 2026</p>
-  <p>
-    First release. Viewing, annotation, comments with threaded replies, form
-    filling, text recognition in 38 languages, page organisation, AES-256
-    encryption, and certificate signing with optional trusted timestamps.
-  </p>
+  <h4>{{ release.version }}</h4>
+  <p class="date">{{ release.date }}</p>
+  <p>{{ release.notes }}</p>
 </div>
+{% endfor %}
 
 ### Licence
 

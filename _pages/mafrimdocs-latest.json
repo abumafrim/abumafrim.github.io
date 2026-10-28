@@ -1,0 +1,12 @@
+---
+permalink: /mafrimdocs/latest.json
+sitemap: false
+---
+{%- assign app = site.data.mafrimdocs -%}
+{%- assign latest = app.releases | first -%}
+{
+  "version": {{ latest.version | jsonify }},
+  "notes": {{ latest.notes | strip | jsonify }},
+  "url": {{ app.page | jsonify }},
+  "date": {{ latest.date | jsonify }}
+}
