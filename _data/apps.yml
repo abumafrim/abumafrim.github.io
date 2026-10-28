@@ -24,7 +24,7 @@ apps:
 
     about: >-
       Read, annotate, fill in forms, run text recognition on scans, reorganise
-      pages, encrypt, and sign with a certificate — all on your own machine. It
+      pages, encrypt, and sign with a certificate, all on your own machine. It
       has no account, no telemetry and no analytics, and your documents are
       never sent anywhere.
     privacy: >-
@@ -46,7 +46,7 @@ apps:
     # Everything else, said once and quietly rather than as three empty cards.
     coming:
       - name: Windows and Linux
-        when: Packaging work, not a rewrite — the toolkit already targets both.
+        when: Packaging work rather than a rewrite. The toolkit already targets both.
       - name: iPhone, iPad and Android
         when: In development, from the same codebase as the desktop app.
 
@@ -78,10 +78,13 @@ apps:
         text: AES-256, with the permissions actually applied.
 
     history:
-      - version: 0.1.0
+      - version: 1.0.0
         date: October 2026
         notes: >-
-          First release. Viewing, annotation, comments with threaded replies,
-          form filling, text recognition in 38 languages, page organisation,
-          AES-256 encryption, and certificate signing with optional trusted
-          timestamps.
+          A guide and the licence now live under Help. The document's own
+          contents and your own bookmarks are separate panels rather than one
+          list. Comments written here open correctly in Adobe, including in
+          languages other than English. Signatures can carry a trusted
+          timestamp, and can be drawn on the page without covering anything.
+          Opening a PDF from Finder adds a tab instead of doing nothing, and
+          the Edit menu no longer shows a blank row.
