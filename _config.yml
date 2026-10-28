@@ -294,7 +294,7 @@ scholar:
   details_link: Details
 
   query: "@*"
-  sort_by: month
+  sort_by: rank,month
   order: descending
   group_by: year
   group_order: descending
@@ -311,6 +311,7 @@ enable_publication_badges:
 filtered_bibtex_keywords:
   [
     abbr,
+    rank,
     abstract,
     additional_info,
     altmetric,
