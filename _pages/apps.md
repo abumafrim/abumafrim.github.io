@@ -21,24 +21,10 @@ nav_order: 7
     .apps__nav { position: static !important; }
   }
 
-  /* The list of applications. Built here rather than from the headings:
-     bootstrap-toc only promotes a heading level that appears more than once,
-     so a single application would never be listed. */
+  /* The sidebar's appearance is defined once in assets/css/main.scss, shared
+     with the section list on the CV. Only the layout belongs here. */
   .apps__nav { position: sticky; top: 6rem; align-self: start; }
   .apps__nav ol { list-style: none; margin: 0; padding: 0; }
-  .apps__nav a {
-    display: block;
-    padding: 0.3rem 0 0.3rem 0.8rem;
-    border-left: 2px solid var(--global-divider-color);
-    color: var(--global-text-color-light);
-    font-size: 0.95rem;
-  }
-  .apps__nav a:hover,
-  .apps__nav a.is-here {
-    color: var(--global-theme-color);
-    border-left-color: var(--global-theme-color);
-    text-decoration: none;
-  }
 
   .app + .app { margin-top: 5rem; }
   .app__name { font-size: 2rem; margin: 0 0 0.3rem; }
