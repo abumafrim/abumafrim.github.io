@@ -46,7 +46,7 @@ ninja.data = [{
           },
         },{id: "nav-apps",
           title: "Apps",
-          description: "Software I build and maintain, free to download.",
+          description: "Software I build, free to download.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/apps/";
