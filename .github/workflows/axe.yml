@@ -29,7 +29,10 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2.2"
+          # Matches deploy.yml: this builds the same site, so it should build
+          # it with the same Ruby. The series rather than one patch release,
+          # because newer runner images only build the latest patch of each.
+          ruby-version: "3.3"
           bundler-cache: true
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
