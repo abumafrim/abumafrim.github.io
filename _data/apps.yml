@@ -37,7 +37,7 @@ apps:
     # the link follows the version without being edited.
     download_for: macOS
     file: MafrimDocs_{version}_universal.dmg
-    size: 73 MB
+    size: 74 MB
     requires: macOS 10.15 or later
     facts:
       - Universal build. Apple Silicon and Intel in one download.
@@ -78,6 +78,12 @@ apps:
         text: AES-256, with the permissions actually applied.
 
     history:
+      - version: 1.0.1
+        date: November 2026
+        notes: >-
+          Fixes a startup failure on macOS 10.15 Catalina, where the app would
+          not open at all. Copying text to the clipboard now works on that
+          version as well.
       - version: 1.0.0
         date: October 2026
         notes: >-
