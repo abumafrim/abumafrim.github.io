@@ -76,7 +76,8 @@
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
-.disabled {
+.disabled,
+:disabled {
   pointer-events: none !important;
 }
 a {
