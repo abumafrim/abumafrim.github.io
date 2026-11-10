@@ -66,8 +66,18 @@ apps:
           once, then work offline.
       - name: Pages
         text: >-
-          Reorder, rotate, delete, merge, split, and insert pages from other
-          files.
+          Reorder, rotate, duplicate, delete, merge, split, and insert pages
+          from other files. Right-click a page for the same actions.
+      - name: Photos and scans
+        text: >-
+          Turn a photo of a page into a page. Mark its four corners and it is
+          straightened, a Document look makes it black on white like a scan,
+          and you choose the paper size, margin and resolution. The file size
+          is shown as you change them.
+      - name: Smaller files
+        text: >-
+          Reduce the size of a PDF by re-saving the photographs inside it.
+          Text, pages and form fields are left alone.
       - name: Signing
         text: >-
           Sign with a certificate, optionally with a trusted timestamp so the
@@ -78,6 +88,16 @@ apps:
         text: AES-256, with the permissions actually applied.
 
     history:
+      - version: 1.1.0
+        date: November 2026
+        notes: >-
+          A new image editor turns photos and scans into pages: crop,
+          straighten a page photographed at an angle, convert it to black on
+          white, and choose the paper size, margin and resolution. Delete,
+          duplicate and move pages from the menu or by right-clicking a page.
+          Reduce the size of a large PDF. Drag files onto the window, or paste
+          a picture into Add Pages. Undoing back to the saved document no
+          longer asks you to save again.
       - version: 1.0.1
         date: November 2026
         notes: >-
