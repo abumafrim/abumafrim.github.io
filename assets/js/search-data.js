@@ -62,9 +62,9 @@ ninja.data = [{
             window.open("https://www.linkedin.com/embed/feed/update/urn:li:share:7466049073943425025", "_blank");
           
         },
-      },{id: "post-african-languages-reach-record-web-presence-in-common-crawl-data",
+      },{id: "post-africc-africanlanguages-nlp-commoncrawl-digitalinclusion-opendata",
         
-          title: 'African languages reach record web presence in Common Crawl data <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: '#africc #africanlanguages #nlp #commoncrawl #digitalinclusion #opendata <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
         description: "African languages just hit their highest-ever representation on the web!!!The latest Common Crawl (Jan 2026) shows African languages at 0.057% of all crawled pages, an all-time record. That&#39;s 18.5% higher than the previous peak and 343,000+ more pages than the last crawl.Some standout growth in a single month:→ Igbo: +124%→ Sango: +259%→ Tswana: +279%→ Swahili: +45% (now at 294K pages)For context, English sits at 42% — roughly 728x more pages than all 29 detected African languages combined. There&#39;s still a massive gap, but the direction is right. We believe projects like AfriCC are contributing to this shift by actively increasing the volume and diversity of African language content available for web crawlers.The full data is open — Common Crawl publishes language stats for every monthly crawl: https://lnkd.in/dE-WAUeZWhat&#39;s your take — what else can we do to close this gap?#AfriCC #AfricanLanguages #NLP #CommonCrawl #DigitalInclusion #OpenData",
         section: "Posts",
