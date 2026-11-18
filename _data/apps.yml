@@ -37,7 +37,7 @@ apps:
     # the link follows the version without being edited.
     download_for: macOS
     file: MafrimDocs_{version}_universal.dmg
-    size: 74 MB
+    size: 35 MB
     requires: macOS 10.15 or later
     facts:
       - Universal build. Apple Silicon and Intel in one download.
@@ -88,6 +88,16 @@ apps:
         text: AES-256, with the permissions actually applied.
 
     history:
+      - version: 1.2.1
+        date: November 2026
+        notes: >-
+          Write pages inside the app: a page editor with headings, lists,
+          tables and pictures, where the page you see is the page you get.
+          Opening a PDF from Finder with Open With now opens the document.
+          Drawn signatures no longer come out as broken lines. Scan on the
+          home screen is now Create, which also starts a blank PDF. The privacy
+          policy is under Help. Addresses Open and New doing nothing on macOS
+          10.15 Catalina. The download is about half the size.
       - version: 1.1.0
         date: November 2026
         notes: >-
