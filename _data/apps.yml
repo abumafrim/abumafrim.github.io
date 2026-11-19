@@ -43,12 +43,19 @@ apps:
       - Universal build. Apple Silicon and Intel in one download.
       - Signed and notarized by Apple, so it opens without a warning.
 
+    # Versions that come from a store. The store shows its own version and
+    # size, so neither is repeated here to fall out of date.
+    stores:
+      - label: Get it on the App Store
+        for: iPhone and iPad
+        url: https://apps.apple.com/app/id6833811292
+
     # Everything else, said once and quietly rather than as three empty cards.
     coming:
+      - name: Android
+        when: In testing on Google Play.
       - name: Windows and Linux
         when: Packaging work rather than a rewrite. The toolkit already targets both.
-      - name: iPhone, iPad and Android
-        when: In development, from the same codebase as the desktop app.
 
     features:
       - name: Read and annotate

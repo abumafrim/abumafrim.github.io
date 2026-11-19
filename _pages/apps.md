@@ -53,6 +53,13 @@ nav_order: 7
   }
   .app__download:hover { color: var(--global-bg-color); text-decoration: none; opacity: 0.85; }
   .app__download:focus-visible { outline: 2px solid var(--global-text-color); outline-offset: 3px; }
+  .app__download--store {
+    background: transparent;
+    color: var(--global-theme-color);
+    box-shadow: inset 0 0 0 1.5px var(--global-theme-color);
+  }
+  .app__download--store:hover { color: var(--global-theme-color); }
+  .app__store { margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid var(--global-divider-color); }
   .app__size { margin-left: 0.9rem; color: var(--global-text-color-light); font-size: 0.9rem; }
   .app__facts { list-style: none; padding: 0; margin: 1.1rem 0 0; font-size: 0.9rem; color: var(--global-text-color-light); }
   .app__facts li { margin-bottom: 0.2rem; }
@@ -117,6 +124,12 @@ nav_order: 7
       {% for fact in app.facts %}<li>{{ fact }}</li>{% endfor %}
       <li>{{ app.requires }}.</li>
     </ul>
+    {% for store in app.stores %}
+    <div class="app__store">
+      <a class="app__download app__download--store" href="{{ store.url }}">{{ store.label }}</a>
+      <span class="app__size">{{ store.for }}</span>
+    </div>
+    {% endfor %}
   </div>
 
   <div class="app__elsewhere">
