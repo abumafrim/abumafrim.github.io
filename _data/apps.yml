@@ -95,6 +95,12 @@ apps:
         text: AES-256, with the permissions actually applied.
 
     history:
+      - version: 1.2.4
+        date: November 2026
+        notes: >-
+          Ticks, crosses and dots from the Mark tool, and lines and arrows, are
+          now kept when you save. Before this version they were left out of the
+          saved file while text, signatures and drawings beside them were kept.
       - version: 1.2.3
         date: November 2026
         notes: >-
