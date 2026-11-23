@@ -95,6 +95,12 @@ apps:
         text: AES-256, with the permissions actually applied.
 
     history:
+      - version: 1.2.3
+        date: November 2026
+        notes: >-
+          Checkboxes and radio buttons sit at a comfortable distance from their
+          labels throughout the app, including on macOS 10.15 Catalina.
+          Drop-down menus are now the same height as the fields beside them.
       - version: 1.2.2
         date: November 2026
         notes: >-
