@@ -95,6 +95,16 @@ apps:
         text: AES-256, with the permissions actually applied.
 
     history:
+      - version: 1.2.2
+        date: November 2026
+        notes: >-
+          Typed text now has line spacing and letter spacing, so text added to
+          a form can sit on its printed lines or one letter to a box. Fixes a
+          fault where the window could be replaced by "Something broke: The
+          quota has been exceeded" after working with pictures for a while.
+          On macOS 10.15 Catalina, a page's selectable text no longer shows on
+          top of the page and dark mode works. The recovery window closes by
+          itself after recovering unsaved work.
       - version: 1.2.1
         date: November 2026
         notes: >-
